@@ -1,0 +1,14 @@
+<p>From the Quiz comp</p>
+
+<section ng-repeat="question in $ctrl.questionList track by $index">
+  <p>Question: {{ question.question }}</p>
+  <form name="answers">
+      <input type="radio" name="answer" ng-click="$ctrl.submitAnswer(question, question.choice_one)">A. {{question.choice_one }}
+      <input type="radio" name="answer" ng-click="$ctrl.submitAnswer(question, question.choice_two)">B. {{question.choice_two }}
+      <input type="radio" name="answer" ng-click="$ctrl.submitAnswer(question, question.choice_three)">C. {{question.choice_three }}
+      <input type="radio" name="answer" ng-click="$ctrl.submitAnswer(question, question.choice_four)">D. {{question.choice_four }}
+  </form>
+
+
+</section>
+
