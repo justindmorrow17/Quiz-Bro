@@ -10,7 +10,7 @@ const pool = require("./connection");
 // ];
 
 function selectAll(req, res){
-  pool.query("select * from scores").then(function(result) {
+  pool.query("select * from scores order by score desc limit 10").then(function(result) {
     res.send(result.rows);
   });
 };

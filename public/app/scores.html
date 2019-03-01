@@ -1,1 +1,7 @@
 <p>From the scores comp</p>
+
+<section ng-repeat="score in $ctrl.scoreboard track by $index">
+  <p>{{ score.player_name }}</p>
+  <p>{{ score.score }}</p>
+
+</section>
