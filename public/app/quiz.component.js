@@ -33,6 +33,7 @@ const quiz = {
       }
 
       if (submit){
+        vm.showSubmit = true
         vm.userScore = QuizService.checkScore(vm.answerList)
       }
     }

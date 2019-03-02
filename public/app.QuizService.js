@@ -36,6 +36,14 @@ function QuizService($http, $location) {
     return score;
   }
 
+  self.startGame = function () {
+    $location.path("/quiz")
+  }
+
+  self.playAgain = function() {
+    $location.path("/quiz")
+
+  }
 };
 // QuizService contains these three methods:
 // addScore

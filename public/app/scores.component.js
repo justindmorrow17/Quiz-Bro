@@ -8,6 +8,10 @@ const scores = {
     QuizService.getScores().then(function(response) {
       vm.scoreboard = response.data;
     })
+
+    vm.playAgain = function() {
+      QuizService.playAgain()
+    }
   }]
 }
 
