@@ -12,6 +12,5 @@ angular
     })
     .when("/scores", {                //paths to score page
       template: "<scores></scores>"
-    }).otherwise({ redirectTo: "/welcome"})
-
-  }])
+    }).otherwise({ redirectTo: "/welcome"}) //paths to the home page under all conditions where quiz page or scores page isnt selected
+  }]);

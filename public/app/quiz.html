@@ -29,11 +29,13 @@
 
 </section>
 <section id="submitOv" ng-if="$ctrl.showSubmit">
-
+<!-- Displays the final score and contains the input for entering name -->
     <p>Your score is {{ $ctrl.userScore }}, please enter your name below: </p>
     <form class="nameForm" ng-submit="$ctrl.submitScore(userName)">
       <input class="nameInput" type="text" placeholder="Name" ng-model="userName">
+      <!-- submit name and score -->
       <button id="nameBtn">
+  <!-- HTML <svg> element is a container for SVG graphics. -->
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M3 22v-20l18 10-18 10z"/></svg>
       </button>
     </form>

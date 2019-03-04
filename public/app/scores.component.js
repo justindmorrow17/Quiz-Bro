@@ -9,7 +9,7 @@ const scores = {
     QuizService.getScores().then(function(response) {
       vm.scoreboard = response.data;
     });
-
+//play again function
     vm.playAgain = () => {
       QuizService.playAgain();
     };
