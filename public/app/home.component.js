@@ -2,14 +2,15 @@
 
 const home = {
     templateUrl: "/app/home.html",
-    controller: ["QuizService", function(QuizService){
+    controller: ["QuizService", function(QuizService) {
         const vm= this;
-        vm.startGame = function() {
-            QuizService.startGame()
-        }
+
+        vm.startGame = () => {
+            QuizService.startGame();
+        };
     }]
-}
+};
 
 angular
     .module("App")
-    .component("home", home)
+    .component("home", home);

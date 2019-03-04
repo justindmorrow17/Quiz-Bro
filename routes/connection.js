@@ -1,5 +1,5 @@
 "use strict";
-
+//connection object that is building a way to communicate to the database; module uses a pool to save time by reusing connections
 const { Pool } = require("pg");
 const credentials = new Pool({
 user: "postgres",
@@ -9,4 +9,4 @@ port: 5432,
 database: "ultimatequizDB",
 ssl: false
 });
-module.exports = credentials;
+module.exports = credentials;  //exporting to the routes.js

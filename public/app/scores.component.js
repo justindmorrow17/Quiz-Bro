@@ -2,18 +2,19 @@
 
 const scores = {
   templateUrl: "app/scores.html",
-  controller: ["QuizService", function (QuizService){
+  controller: ["QuizService", function(QuizService) {
     const vm = this;
 
+  // retrieves the score data from our database  
     QuizService.getScores().then(function(response) {
       vm.scoreboard = response.data;
-    })
+    });
 
-    vm.playAgain = function() {
-      QuizService.playAgain()
-    }
+    vm.playAgain = () => {
+      QuizService.playAgain();
+    };
   }]
-}
+};
 
 angular 
   .module("App")

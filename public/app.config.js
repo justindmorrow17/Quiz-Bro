@@ -4,13 +4,13 @@ angular
   .module("App")
   .config(["$routeProvider", function($routeProvider) {
     $routeProvider
-    .when("/welcome", {
+    .when("/welcome", {              //paths to welcome page
       template: "<home></home>"
     })
-    .when("/quiz", {
+    .when("/quiz", {                 //paths to quiz page
       template: "<quiz></quiz>"
     })
-    .when("/scores", {
+    .when("/scores", {                //paths to score page
       template: "<scores></scores>"
     }).otherwise({ redirectTo: "/welcome"})
 
